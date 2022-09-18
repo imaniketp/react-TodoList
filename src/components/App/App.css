@@ -1,0 +1,38 @@
+.bodyContainer{
+  display: flex;
+  justify-Content: center;
+  align-Items: center;
+  height: 100vh;
+  background-Color: #282c34;
+}
+
+.todoListContainer{
+  display: flex;
+  justify-content: center;
+  align-Items: center;
+  flex-Direction: column;
+  border-Radius: 10px;
+  width: 600px;
+  background-Color: aqua;
+  box-Shadow: 0 0 10px 0 rgba(255,255,255,.5);
+}
+.todoListContainer span{
+  position: relative;
+}
+.todoListContainer span::after{
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+background: aqua;
+animation: typing 2s steps(10) infinite;
+}
+
+@keyframes typing{
+  100%{
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
+}
